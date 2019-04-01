@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cheerio Hello</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="/static/css/mdb.css" rel="stylesheet">
+    <link href="/static/css/navbar.css" rel="stylesheet">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <form th:action="@{/send}" method="post" autocomplete="off">
+        <div class="form-group">
+            <textarea name="body" rows="40" cols="60" placeholder="Your message here."></textarea>
+            <br/>
+            <input type="submit" class="btn btn-primary" name="Submit" />
+        </div>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-1 text-center">
+                <a href="#" class="fab fa-github fa-2x"></a>
+            </div>
+            <div class="col-md-1 text-center">
+                <a href="#" class="fab fa-linkedin fa-2x"></a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-1 text-center">
+                <a th:href="@{/logout}">Logout</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/static/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/static/vendor/js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/static/vendor/js/mdb.js"></script>
+</body>
+
+</html>

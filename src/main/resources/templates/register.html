@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign up.</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  Place favicon.ico in the root directory
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css"> -->
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+	<form action="/signup" method="POST" autocomplete="off">
+		<label>email:</label>
+		<input type="text" name="email" />
+		<label>First Name:</label>
+		<input type="text" name="firstname" />
+		<label>Last Name:</label>
+		<input type="text" name="lastname" />
+		<label>Role:</label>
+		<input type="text" name="role" />
+		<label>Password:</label>
+		<input type="password" name="password" />
+		<input type="submit" name="Submit">
+		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+	</form>
+</body>
+
+</html>

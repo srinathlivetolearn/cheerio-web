@@ -1,0 +1,122 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cheerio Login Form</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="/static/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main-top-intro">
+        <div class="bg-layer">
+            <!-- header -->
+            <div class="wrapper">
+                <header>
+                    <div class="header-w3layouts">
+                        <h1>
+                            <a class="navbar-brand logo" href="index.html">
+                                Cheerio
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="clear"></div>
+
+                </header>
+                <!-- //header -->
+                <div class="content-inner-info">
+                    <h2>Say Hello !!!</h2>
+                    <div class="content-w3layouts-main">
+
+                        <div class="form-w3ls-left-info">
+                            <form action="/login" method="post" autocomplete="off">
+
+                                <input type="text" name="username" placeholder="Email Address" required="" />
+
+                                <input type="password" name="password" placeholder="Password" required="" />
+
+                                <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
+                                <div class="links">
+                                    <p><a href="#">Forgot Password? Contact me :)</a></p>
+                                </div>
+                                <div class="bottom">
+                                    <button class="btn" type="submit">Log In</button>
+                                    <button class="btn reg" type="reset">Reset</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- copyright -->
+                <div class="copy-w3layouts-inf">
+                    <p>© 2019 Cheerio Login. No rights reserved | Design by
+                        <a href="http://w3layouts.com"> W3layouts.</a>
+                    </p>
+                    <ul class="list-unstyled w3layouts-icons">
+                        <li>
+                            <a href="#" class="face-b">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twit">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dribble">
+                                <span class="fa fa-github"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="face-b">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!-- //copyright -->
+            </div>
+        </div>
+    </div>
+    <!-- //main -->
+
+</body>
+
+</html>

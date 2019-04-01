@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cheerio Hello</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/mdb.css" rel="stylesheet">
+  <link href="/static/css/navbar.css" rel="stylesheet">
+  <meta name="theme-color" content="#fafafa">
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+  <!--<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Cheerio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar-right mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" th:href="@{/logout}">Logout <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Hey Ya!</h1>
+        <h2>This work is seriously under progress.Due to shortage of time (as always :-P ). You might come across some whitelabel error pages,
+          unexpected behavior and missing validations. Please bear with me. Still it annoys you? You've earned every right to swear on me.
+          Well... that being said, <strong>Welcome!!</strong>
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <a th:href="@{/inbox}" class="btn btn-lg btn-outline-primary">Go to inbox</a>
+        <!--<a href="#" class="btn btn-success"><i class="fab fa-github-square fa-2x pull-left"></i>Check me out!</a>-->
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-1 text-center">
+          <a href="#" class="fab fa-github fa-2x"></a>
+        </div>
+        <div class="col-md-1 text-center">
+          <a href="#" class="fab fa-linkedin fa-2x"></a>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-1 text-center">
+          <a th:href="@{/logout}" style="color: #fafdf">Logout</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/static/vendor/js/bootstrap.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/static/vendor/js/mdb.js"></script>
+</body>
+
+</html>
