@@ -27,6 +27,12 @@ public class UserController {
 	public String hello() {
 		return "hello";
 	}
+
+	@GetMapping("/bulk")
+	public String ingestBulkUsers() {
+		userService.bulkCreate();
+		return "hello";
+	}
 	
 	@GetMapping("/signup")
 	public String register() {
@@ -69,7 +75,7 @@ public class UserController {
 			LOG.error(e);
 			return "redirect:/error";
 		}
-		return "redirect:/inbox";
+		return "signin";
 	}
 
 }

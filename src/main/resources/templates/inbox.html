@@ -14,18 +14,15 @@
     <link href="/static/css/navbar.css" rel="stylesheet">
 
     <meta name="theme-color" content="#fafafa">
-
-    <style type="text/css">
-
-    </style>
 </head>
 
 <body>
 <div class="container-fluid">
     <div class="row" th:each="message : ${messages}">
         <div class="col-md-12 text-left">
+            <p class="text-muted">From: <span th:text="${message.senderId}"></span></p>
             <h3>
-                <pre th:text="${message.body}">
+                <pre th:text="${message.body}" style="font-family: Roboto">
                 </pre>
             </h3>
         </div>
